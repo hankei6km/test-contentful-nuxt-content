@@ -9,3 +9,8 @@ coverage
 dist
 sw.*
 .env
+
+/content/en/
+/content/ja/
+/content/settings.json
+/tmp/
