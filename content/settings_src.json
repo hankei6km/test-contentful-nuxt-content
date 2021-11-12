@@ -1,0 +1,10 @@
+{
+  "title": "TEST Contentful and nuxt-content",
+  "url": "https://hankei6km.github.io/test-contentful-nuxt-content",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "hakkei6km/remote-cms-content",
+  "twitter": "@hankei6km"
+}

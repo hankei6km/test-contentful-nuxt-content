@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "predev": "bash scripts/setup.sh",
+    "prebuild": "bash scripts/setup.sh",
+    "pregenerate": "bash scripts/setup.sh",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "save:contents": "bash scripts/save_contents.sh"
   },
   "dependencies": {
     "@hankei6km/rehype-image-salt": "^0.1.1-pre.31",
