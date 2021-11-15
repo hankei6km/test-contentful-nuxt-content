@@ -2,8 +2,8 @@
   "title": "TEST Contentful and nuxt-content",
   "url": "https://hankei6km.github.io/test-contentful-nuxt-content",
   "logo": {
-    "light": "/logo-light.svg",
-    "dark": "/logo-dark.svg"
+    "light": "/rehype-image-salt-logo-light.svg",
+    "dark": "/rehype-image-salt-logo-dark.svg"
   },
   "github": "hankei6km/remote-cms-contents",
   "twitter": "@hankei6km"
