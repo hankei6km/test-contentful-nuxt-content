@@ -25,8 +25,8 @@ export default theme({
   modules: ["@nuxt/image"],
   image: {
     // domains: [ ],
-    imgix: {
-      baseURL: "https://images.microcms-assets.io/",
+    contentful: {
+      baseURL: "https://images.ctfassets.net/",
     },
   },
   // CodesandoBox で試したところ、Fork すると置き換わった.
@@ -46,10 +46,10 @@ export default theme({
         [
           "@hankei6km/rehype-image-salt",
           {
-            baseURL: "https://images.microcms-assets.io/",
+            baseURL: "https://images.ctfassets.net/",
             rebuild: {
               tagName: "nuxt-img",
-              baseAttrs: 'provider="imgix" data-salt-q=""',
+              baseAttrs: 'provider="contentful" data-salt-q=""',
             },
           },
         ],
