@@ -1,27 +1,5 @@
 # test-contentful-nuxt-content
 
-## Setup
+このドキュメントは、[remote-cms-contents](https://github.com/hankei6km/remote-cms-contents) の [Contentful](https://www.contentful.com/) 対応で作成した検証用のダミー。
 
-Install dependencies:
-
-```bash
-npm run install
-```
-
-## Development
-
-```bash
-npm run dev
-```
-
-## Static Generation
-
-This will create the `dist/` directory for publishing to static hosting:
-
-```bash
-npm run generate
-```
-
-To preview the static generated app, run `npm run start`
-
-For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).
+Contentful の RichText で編集したエントリーを remote-cms-contents で取得し nuxt-content(の Docs Theme) で生成している。
