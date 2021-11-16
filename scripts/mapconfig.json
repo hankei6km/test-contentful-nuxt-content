@@ -1,0 +1,73 @@
+{
+  "passthruUnmapped": false,
+  "media": {
+    "image": {
+      "library": [
+        {
+          "src": "https://images.microcms-assets.io/assets/",
+          "kind": "imgix"
+        }
+      ]
+    }
+  },
+  "transform": "fields.collection",
+  "flds": [
+    {
+      "srcName": "fields.id",
+      "dstName": "id",
+      "fldType": "id"
+    },
+    {
+      "srcName": "fields.title",
+      "dstName": "title",
+      "fldType": "string"
+    },
+    {
+      "srcName": "fields.content",
+      "dstName": "content",
+      "fldType": "html",
+      "convert": "markdown"
+    },
+    {
+      "srcName": "fields.description",
+      "dstName": "description",
+      "fldType": "string"
+    },
+    {
+      "srcName": "fields.category",
+      "dstName": "category",
+      "fldType": "string",
+      "transform": "fields.title"
+    },
+    {
+      "srcName": "fields.fullscreen",
+      "dstName": "fullscreen",
+      "fldType": "boolean"
+    },
+    {
+      "srcName": "fields.version",
+      "dstName": "version",
+      "fldType": "string"
+    },
+    {
+      "srcName": "fields.menuTitle",
+      "dstName": "menuTitle",
+      "fldType": "string"
+    },
+    {
+      "srcName": "fields.subtitle",
+      "dstName": "subtitle",
+      "fldType": "string"
+    },
+    {
+      "srcName": "fields.badge",
+      "dstName": "badge",
+      "fldType": "string"
+    },
+    {
+      "srcName": "fields.list",
+      "dstName": "list",
+      "fldType": "object"
+    }
+  ]
+}
