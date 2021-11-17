@@ -26,7 +26,15 @@
       "srcName": "fields.content",
       "dstName": "content",
       "fldType": "html",
-      "convert": "markdown"
+      "convert": "markdown",
+      "toMarkdownOpts": {
+        "embedImgAttrs": [
+          {
+            "baseURL": "https://images.ctfassets.net/",
+            "embedTo": "alt"
+          }
+        ]
+      }
     },
     {
       "srcName": "fields.description",
