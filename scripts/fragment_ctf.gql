@@ -1,0 +1,39 @@
+fragment assetBlock on Asset {
+  sys {
+    id
+  }
+  url
+  title
+  width
+  height
+  description
+  contentType
+}
+
+# fragment entryBlock on Entry {
+#   __typename
+#   sys {
+#     id
+#   }
+# }
+
+fragment contentLinks on DocsThemeContentsContentLinks {
+  assets {
+    block {
+      ...assetBlock
+    }
+  }
+  entries {
+    block {
+      # フィールドが取得されないので一旦保留(GraphiQL だとうまくいくのだが)
+      # ... entryBlock
+      __typename
+      sys {
+        id
+      }
+      ... on FragmentCodeblock {
+        content
+      }
+    }
+  }
+}
