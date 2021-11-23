@@ -49,7 +49,8 @@ export default theme({
             baseURL: "https://images.ctfassets.net/",
             rebuild: {
               tagName: "nuxt-img",
-              baseAttrs: 'provider="contentful" data-salt-q=""',
+              baseAttrs:
+                'provider="contentful" data-salt-q="" data-salt-max-w="1200"',
             },
           },
         ],
