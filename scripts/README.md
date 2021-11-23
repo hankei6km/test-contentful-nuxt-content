@@ -20,6 +20,18 @@ Contentful ではコンテンツを手動で並び変える方法(UI)が提供�
 
 ただし、query の(結果の複雑さの)制限が厳しいので、コンテンツを参照するすべてのケースで GraphQL が適しているとは限らない。
 
+## 設定
+
+以下の環境編集を定義する。
+
+- `RCC_CLIENT_KIND` - `contentful:gql`
+- `RCC_API_BASE_URL` - `https://graphql.contentful.com/content/v1/spaces/`
+- `RCC_CREDENTIAL__0` - `{SPACE_ID}`
+- `RCC_CREDENTIAL__1` - `{CDA_TOKEN}`
+- `RCC_MAP_CONFIG` - `scripts/mapconfig.json`
+- `RCC_QUERY__0` - `scripts/fragment_ctf.gql`
+- `RCC_QUERY__1` - `scripts/query_ctf.gql`
+
 ## Contentful からコンテンツを受信する API
 
 スクリプトの内容と直接関係はないのですが、簡単なメモなど。
