@@ -10,7 +10,7 @@
       ]
     }
   },
-  "transform": "docsThemeCollectionCollection.items.collectionCollection",
+  "transform": "data.docsThemeCollectionCollection.items.collectionCollection",
   "flds": [
     {
       "srcName": "id",
@@ -42,10 +42,9 @@
       "fldType": "string"
     },
     {
-      "srcName": "category",
+      "srcName": "category.title",
       "dstName": "category",
-      "fldType": "string",
-      "transform": "title"
+      "fldType": "string"
     },
     {
       "srcName": "fullscreen",
