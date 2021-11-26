@@ -23,7 +23,7 @@ query GetContent(
           }
           description
           category {
-            id
+            title
           }
           fullscreen
           version
