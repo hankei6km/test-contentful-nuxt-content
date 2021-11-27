@@ -10,20 +10,20 @@
       ]
     }
   },
-  "transform": "data.docsThemeCollectionCollection.items.collectionCollection",
+  "transform": "fields.collection",
   "flds": [
     {
-      "srcName": "id",
+      "srcName": "fields.id",
       "dstName": "id",
       "fldType": "id"
     },
     {
-      "srcName": "title",
+      "srcName": "fields.title",
       "dstName": "title",
       "fldType": "string"
     },
     {
-      "srcName": "content",
+      "srcName": "fields.content",
       "dstName": "content",
       "fldType": "html",
       "convert": "markdown",
@@ -37,42 +37,43 @@
       }
     },
     {
-      "srcName": "description",
+      "srcName": "fields.description",
       "dstName": "description",
       "fldType": "string"
     },
     {
-      "srcName": "category.title",
+      "srcName": "fields.category",
       "dstName": "category",
-      "fldType": "string"
+      "fldType": "string",
+      "transform": "fields.title"
     },
     {
-      "srcName": "fullscreen",
+      "srcName": "fields.fullscreen",
       "dstName": "fullscreen",
       "fldType": "boolean"
     },
     {
-      "srcName": "version",
+      "srcName": "fields.version",
       "dstName": "version",
       "fldType": "string"
     },
     {
-      "srcName": "menuTitle",
+      "srcName": "fields.menuTitle",
       "dstName": "menuTitle",
       "fldType": "string"
     },
     {
-      "srcName": "subtitle",
+      "srcName": "fields.subtitle",
       "dstName": "subtitle",
       "fldType": "string"
     },
     {
-      "srcName": "badge",
+      "srcName": "fields.badge",
       "dstName": "badge",
       "fldType": "string"
     },
     {
-      "srcName": "list",
+      "srcName": "fields.list",
       "dstName": "list",
       "fldType": "object"
     }

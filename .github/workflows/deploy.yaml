@@ -50,6 +50,8 @@ jobs:
         RCC_CREDENTIAL__0: ${{ secrets.RCC_CREDENTIAL__0 }}
         RCC_CREDENTIAL__1: ${{ secrets.RCC_CREDENTIAL__1 }}
         RCC_MAP_CONFIG: ${{ secrets.RCC_MAP_CONFIG }}
+        RCC_QUERY__0: ${{ secrets.RCC_QUERY__0 }}
+        RCC_QUERY__1: ${{ secrets.RCC_QUERY__1 }}
 
     - name: Run generate
       run: npm run generate

@@ -1,0 +1,39 @@
+query GetContent(
+  $id: String
+  $locale: String
+  $preview: Boolean
+  $skip: Int
+  $pageSize: Int
+) {
+  docsThemeCollectionCollection(
+    preview: $preview
+    limit: 1
+    where: { id: $id }
+  ) {
+    items {
+      collectionCollection(skip: $skip, limit: $pageSize, locale: $locale) {
+        items {
+          id
+          title
+          content {
+            json
+            links {
+              ...contentLinks
+            }
+          }
+          description
+          category {
+            title
+          }
+          fullscreen
+          version
+          menuTitle
+          subtitle
+          badge
+          list
+        }
+        total
+      }
+    }
+  }
+}
