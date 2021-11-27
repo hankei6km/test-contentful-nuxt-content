@@ -30,7 +30,7 @@ SAVE_CONTENT_DIR="${SAVE_DIR}/content"
 SAVE_STATIC_DIR="${SAVE_DIR}/static"
 SAVE_STATIC_IMAGES_DIR="${SAVE_STATIC_DIR}/images"
 
-MAP_CONFIG="${SCRIPTS_DIR}/mapconfig.json"
+MAP_CONFIG="${SCRIPTS_DIR}/mapconfig.yaml"
 DOCS_API_NAME="docsThemeCollection"
 DOCS_COLLECTION_ID="test-contentful-nuxt-content"
 DOCS_PREVIEW=""
