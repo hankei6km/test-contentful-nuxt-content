@@ -26,9 +26,11 @@ flds:
     convert: markdown
     toMarkdownOpts:
       # 画像の属性(widht と height)を alt 属性へ埋め込む.
-      embedImgAttrs:
-        - baseURL: https://images.ctfassets.net/
-          embedTo: alt
+      imageSalt:
+        - command: embed
+          baseURL: https://images.ctfassets.net/
+          embed:
+            embedTo: alt
 
   - srcName: description
     dstName: description
