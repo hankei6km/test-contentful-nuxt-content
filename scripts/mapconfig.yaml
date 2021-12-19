@@ -10,17 +10,17 @@ media:
 transform: data.docsThemeCollectionCollection.items.collectionCollection
 
 flds:
-  - srcName: id
+  - query: id
     dstName: id
     fldType: id
 
-  - srcName: title
+  - query: title
     dstName: title
     fldType: string
 
   # RichText(HTML) を Makrdown へ変換する.
   # Contentful では fldType=html の場合は `json` と `links` フィールドから変換する.
-  - srcName: content
+  - query: content
     dstName: content
     fldType: html
     convert: markdown
@@ -32,34 +32,34 @@ flds:
           embed:
             embedTo: alt
 
-  - srcName: description
+  - query: description
     dstName: description
     fldType: string
 
-  - srcName: category.title
+  - query: category.title
     dstName: category
     fldType: string
 
-  - srcName: fullscreen
+  - query: fullscreen
     dstName: fullscreen
     fldType: boolean
 
-  - srcName: version
+  - query: version
     dstName: version
     fldType: string
 
-  - srcName: menuTitle
+  - query: menuTitle
     dstName: menuTitle
     fldType: string
 
-  - srcName: subtitle
+  - query: subtitle
     dstName: subtitle
     fldType: string
 
-  - srcName: badge
+  - query: badge
     dstName: badge
     fldType: string
 
-  - srcName: list
+  - query: list
     dstName: list
     fldType: object
