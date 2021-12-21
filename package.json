@@ -20,6 +20,6 @@
     "nuxt": "^2.15.8"
   },
   "devDependencies": {
-    "@hankei6km/remote-cms-content": "^0.1.1-pre.56"
+    "@hankei6km/remote-cms-content": "^0.1.1-pre.59"
   }
 }
